@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tambah Data Anggota - Perpustakaan FKOM - UNIKU</title>
+</head>
+
+<body>
+    <p>
+        <a href="Index.html"><button>Kembali</button></a>
+    </p>
+    <form name="formInputAnggota">
+
+        <table border="1">
+            <tr>
+                <td colspan="2" align="center">INPUT DATA BUKU</td>
+            </tr>
+            <tr>
+                <td>Kode Buku</td>
+                <td><input type="text" name="kode" maxlength="11" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Judul</td>
+                <td><input type="text" name="judul" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Pengarang</td>
+                <td><input type="text" name="pengarang" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Penerbit</td>
+                <td><input type="text" name="penerbit" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Tahun Terbit</td>
+                <td><input type="number" name="tahun_terbit" maxlength="4" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Stok</td>
+                <td><input type="number" name="stok" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Jumlah Tersedia</td>
+                <td><input type="number" name="jumlah_tersedia" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Jumlah Terpinjam</td>
+                <td><input type="number" name="jumlah_terpinjam" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><select name="prodi" required>
+                        <option value="TERSEDIA" selected>Tersedia</option>
+                        <option value="TIDAK_TERSEDIA">Tidak Tersedia</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td><input type="file" name="foto" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">SIMPAN</button>
+                    <button type="reset">BATAL</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

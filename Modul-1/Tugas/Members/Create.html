@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Tambah Data Anggota - Perpustakaan FKOM - UNIKU</title>
+</head>
+
+<body>
+    <p>
+        <a href="Index.html"><button>Kembali</button></a>
+    </p>
+    <form name="formInputAnggota">
+
+        <table border="1">
+            <tr>
+                <td colspan="2" align="center">INPUT DATA ANGGOTA</td>
+            </tr>
+            <tr>
+                <td>Kode Anggota</td>
+                <td><input type="text" name="kode" maxlength="11" size="25" required></td>
+            </tr>
+            <tr>
+                <td>NIM</td>
+                <td><input type="number" name="nim" maxlength="11" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Nama Anggota</td>
+                <td><input type="text" name="nama" maxlength="11" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Program Studi</td>
+                <td><select name="prodi" required>
+                        <option value="TI_S1" selected>Teknik Informatika - S1</option>
+                        <option value="SI_S1">Sistem Informasi S1</option>
+                        <option value="SIPIL_S1">Teknik Sipil S1</option>
+                        <option value="MI_D3">Manajemen Infrormatika - D3</option>
+                        <option value="DKV_S1">Desain Komunikasi Visual - S1</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Fakultas</td>
+                <td><select name="fakultas" required>
+                        <option value="ILMU_KOMPUTER" selected>Ilmu Komputer</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Jenis Kelamin</td>
+                <td><input type="radio" name="jk" value="L" checked>Laki-Laki
+                    <input type="radio" name="jk" value="P">Perempuan
+                </td>
+            </tr>
+            <tr>
+                <td>Alamat</td>
+                <td><textarea name="alamat" cols="25" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <td>Nomor Telepon</td>
+                <td><input type="telp" name="telp" maxlength="13" size="25" required></td>
+            </tr>
+            <tr>
+                <td>Status</td>
+                <td><select name="status" required>
+                        <option value="MEMINJAM" selected>Meminjam</option>
+                        <option value="TIDAK_MEMINJAM">Tidak Meminjam</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td><input type="file" name="foto" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button type="submit">SIMPAN</button>
+                    <button type="reset">BATAL</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
